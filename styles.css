@@ -928,15 +928,8 @@ section h2 {
     }
 }
 
-/* 전체 배경 색과 폰트 스타일 설정 */
-body {
-    background-color: #121212;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
 
+/* 공통 스타일 */
 /* Contact Section */
 #contact {
     padding: 50px 20px;
@@ -945,18 +938,18 @@ body {
 
 #contact h2 {
     font-size: 2.5rem;
-    color: #ffffff;
     margin-bottom: 20px;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #444;
     display: inline-block;
     padding-bottom: 10px;
 }
 
 #contact .description {
     font-size: 1.2rem;
-    color: #eeeeee;
+    color: #bbb;
     max-width: 600px;
     margin: 20px auto;
     line-height: 1.8;
@@ -981,22 +974,24 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
     text-align: left;
+    border: 1px solid #333;
 }
 
 .contact-info h3 {
-    color: #e0e0e0;
-    margin-bottom: 20px;
     font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .contact-info p {
     font-size: 1rem;
     margin: 10px 0;
     line-height: 1.6;
+    color: #ddd;
 }
 
 .contact-info a {
-    color: #ffffff;
+    color: #00bcd4;
     text-decoration: none;
 }
 
@@ -1008,17 +1003,18 @@ body {
 .qr-code {
     flex: 1;
     max-width: 350px;
-    text-align: center;
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border: 1px solid #333;
 }
 
 .qr-code h3 {
-    color: #e0e0e0;
-    margin-bottom: 20px;
     font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .qr-code img {
@@ -1032,6 +1028,59 @@ body {
 .qr-code p {
     font-size: 1rem;
     color: #bbb;
+}
+
+/* 미디어 쿼리: 모바일 대응 */
+@media screen and (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact .description {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center; /* 모바일에서 카드들을 가운데 정렬 */
+        gap: 20px;
+    }
+
+    .contact-info,
+    .qr-code {
+        max-width: 90%; /* 모바일 화면에서 적절히 크기 조정 */
+        text-align: center;
+        margin: 0 auto; /* 수평 가운데 정렬 */
+    }
+
+    .qr-code img {
+        max-width: 150px;
+    }
+}
+
+/* 미디어 쿼리: 큰 화면 (PC) 대응 */
+@media screen and (min-width: 1024px) {
+    #contact h2 {
+        font-size: 3rem;
+    }
+
+    #contact .description {
+        font-size: 1.4rem;
+    }
+
+    .contact-container {
+        gap: 60px;
+    }
+
+    .contact-info,
+    .qr-code {
+        max-width: 400px;
+        padding: 30px;
+    }
+
+    .qr-code img {
+        max-width: 250px;
+    }
 }
 
 
