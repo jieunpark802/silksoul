@@ -9,11 +9,18 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public'))); // 정적 파일 제공
 
-const dataFile = path.join(__dirname, 'data', 'walletAddresses.json');
+// 데이터 파일 경로 설정
+const dataDir = path.join(__dirname, 'data');
+const dataFile = path.join(dataDir, 'walletAddresses.json');
+
+// `data` 폴더 생성
+if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir); // `data` 폴더가 없으면 생성
+}
 
 // 초기 데이터 파일 생성
 if (!fs.existsSync(dataFile)) {
-    fs.writeFileSync(dataFile, JSON.stringify([]));
+    fs.writeFileSync(dataFile, JSON.stringify([])); // 빈 배열로 초기화
 }
 
 // 지갑 주소 저장 API
