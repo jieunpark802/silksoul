@@ -928,157 +928,112 @@ section h2 {
     }
 }
 
+/* 전체 배경 색과 폰트 스타일 설정 */
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Section */
 #contact {
-    background: rgb(0, 0, 0);
-    color: white;
+    padding: 50px 20px;
     text-align: center;
-    padding: 50px 15px;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px;
-    max-width: 1200px;
-    width: 90%;
 }
 
 #contact h2 {
     font-size: 2.5rem;
+    color: #ffffff;
     margin-bottom: 20px;
-    font-weight: bold;
-    text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 #contact .description {
     font-size: 1.2rem;
+    color: #eeeeee;
+    max-width: 600px;
+    margin: 20px auto;
     line-height: 1.8;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgb(209, 213, 219);
 }
 
+/* Contact Container */
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
 }
 
+/* Contact Info */
 .contact-info {
-    max-width: 400px;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    flex: 1;
+    max-width: 350px;
+    background-color: #1e1e1e;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    text-align: left;
 }
 
 .contact-info h3 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
     font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: rgb(147, 197, 253);
 }
 
 .contact-info p {
     font-size: 1rem;
-    line-height: 1.5;
-    color: rgb(226, 232, 240);
-    margin: 10px 0px;
+    margin: 10px 0;
+    line-height: 1.6;
 }
 
 .contact-info a {
-    color: rgb(96, 165, 250);
+    color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .contact-info a:hover {
-    color: rgb(147, 197, 253);
+    text-decoration: underline;
 }
 
-.contact-form {
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+/* QR Code Section */
+.qr-code {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+    background-color: #1e1e1e;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-.contact-form h3 {
+.qr-code h3 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
     font-size: 1.5rem;
+}
+
+.qr-code img {
+    max-width: 200px;
+    height: auto;
     margin-bottom: 15px;
-    color: rgb(147, 197, 253);
+    border: 2px solid #333;
+    border-radius: 10px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+.qr-code p {
     font-size: 1rem;
-    outline: none;
+    color: #bbb;
 }
 
-.contact-form input::placeholder, .contact-form textarea::placeholder {
-    color: rgb(209, 213, 219);
-}
-
-.contact-form button {
-    background: rgb(37, 99, 235);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.contact-form button:hover {
-    background-color: rgb(30, 64, 175);
-    transform: translateY(-2px);
-}
-
-@media (max-width: 767px) {
-    #contact {
-        padding: 30px 10px;
-    }
-
-    #contact h2 {
-        font-size: 2rem;
-    }
-
-    #contact .description {
-        font-size: 1rem;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-info, .contact-form {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .contact-info h3, .contact-form h3 {
-        font-size: 1.3rem;
-    }
-
-    .contact-form input, .contact-form textarea {
-        font-size: 0.9rem;
-    }
-
-    .contact-form button {
-        font-size: 0.9rem;
-    }
-}
 
 #silksoul-footer {
     background: rgb(0, 0, 0);
