@@ -246,46 +246,30 @@ nav a:hover {
     color: rgb(255, 255, 255);
 }
 
-.event-box input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    color: rgb(34, 118, 255);
-    outline: none;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px inset;
-    box-sizing: border-box;
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.event-box input[type="text"]::placeholder {
-    color: rgb(148, 163, 184);
-}
-
-.event-box button {
-    background: rgb(59, 130, 246);
+button {
+    padding: 10px 20px;
+    background: #007bff;
     color: white;
-    padding: 15px;
     border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    transition: background 0.3s, transform 0.2s;
 }
 
-.event-box button:hover {
-    background: rgb(37, 99, 235);
-    transform: translateY(-2px);
+button:hover {
+    background: #0056b3;
 }
 
-.event-box .success-message {
-    display: none;
-    color: rgb(16, 185, 129);
-    margin-top: 20px;
-    font-size: 1rem;
+.success-message {
+    color: green;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {

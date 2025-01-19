@@ -61,11 +61,21 @@
             </div>
             <h1>Free NFT Drop Event</h1>
             <p>Enter your wallet address to participate in our exclusive NFT drop!</p>
+            
+            <!-- 지갑 주소 입력 -->
             <input type="text" id="wallet-address" placeholder="Enter your wallet address here">
+            
+            <!-- 제출 버튼 -->
             <button onclick="submitWallet()">Submit</button>
-            <p class="success-message" id="success-message">✅ Your wallet address has been submitted!</p>
+            
+            <!-- 성공 메시지 -->
+            <p class="success-message" id="success-message" style="display: none;">✅ Your wallet address has been submitted!</p>
+            
+            <!-- 에러 메시지 -->
+            <p class="error-message" id="error-message" style="display: none; color: red;">❌ Please enter a valid wallet address!</p>
         </div>
     </section>
+    
     
     
 <section class="hero">
