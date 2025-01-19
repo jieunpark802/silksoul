@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silksoul NFT Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Silksoul Logo" class="logo">
+        <nav>
+            <a href="#zeno-story">zeno story</a>
+            <a href="#collection">Collection</a>
+            <a href="#nft-drop-section">drop</a>
+            <a href="#about">about</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="social-icons">
+            <img src="images/opensea.png" alt="OpenSea">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/twitter.png" alt="Twitter">
+        </div>
+    </header>
+
+    <section class="new-collection">
+
+        <div class="collection-grid">
+            <!-- GIF 추가 -->
+            <img src="images/bluesoul.png" 
+                 alt="Blue Soul 3D Model png" 
+                 style="max-width: 100%; height: auto;">
+        </div>
+        <h2 class="interactive-heading">
+            <span class="zeno">2025</span> 
+            <span class="year">zeno</span> 
+            <span class="collection">NFT Collection</span>
+        </h2>   
+        <div class="image-slider">
+            <div class="slider-container">
+                <img src="images/image1.jpg" alt="Image 1">
+                <img src="images/image2.jpg" alt="Image 2">
+                <img src="images/image3.jpg" alt="Image 3">
+                <img src="images/image4.jpg" alt="Image 4">
+                <img src="images/image5.jpg" alt="Image 5">
+                <img src="images/image5.jpg" alt="Image 6">
+            </div>
+        </div>
+    </section>
+
+    <section id="nft-drop-section">
+        <div class="event-box">
+            <!-- 지갑 아이콘 -->
+            <div class="wallet-icon">
+                <img src="images/wallet.png" alt="Wallet Icon">
+            </div>
+            <h1>Free NFT Drop Event</h1>
+            <p>Enter your wallet address to participate in our exclusive NFT drop!</p>
+            <input type="text" id="wallet-address" placeholder="Enter your wallet address here">
+            <button onclick="submitWallet()">Submit</button>
+            <p class="success-message" id="success-message">✅ Your wallet address has been submitted!</p>
+        </div>
+    </section>
+    
+    
+<section class="hero">
+    <div class="collection-grid">
+        <!-- GIF 추가 -->
+        <img src="images/bluesoul.gif" 
+             alt="Blue Soul 3D Model GIF">
+    </div>
+    <h1>Every strand tells a story. Welcome to Silksoul.</h1>
+    <p>Unique and quirky NFTs that deliver stories beyond art.</p>
+    <a href="#collection">
+        <img src="images/walletbutton.png" alt="Explore Collection Button" class="png-button">
+    </a>    
+    <div class="scroll-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" width="40" height="40">
+            <path d="M12 16.5c-.28 0-.53-.11-.71-.29l-5.5-5.5c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.29 4.29V3c0-.55.45-1 1-1s1 .45 1 1v10.79l4.29-4.29c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-5.5 5.5c-.18.18-.43.29-.71.29z"/>
+        </svg>
+    </div>
+</section>
+
+    
+
+    <section id="about">
+        <h2>Why Silksoul?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="images/limited.png" alt="Limited Edition">
+                <p>Limited<br>Edition</p>
+            </div>
+            <div class="feature">
+                <img src="images/ethereum.png" alt="Buy with Ethereum">
+                <p>Payable<br>in ETH</p>
+            </div>
+            <div class="feature">
+                <img src="images/polygon.png" alt="Polygon MATIC Sales">
+                <p>All<br>on Polygon</p>
+            </div>
+        </div>
+        <p>Silksoul NFTs combine artistry and innovation. Designed for the future, each piece is a unique, limited edition stored securely on the Polygon blockchain.</p>
+        <p>While transactions are powered by Polygon MATIC, you can conveniently purchase NFTs with Ethereum, ensuring accessibility and reduced costs.</p>
+    </section>
+    
+    
+    <section id="zeno-story">
+        <div class="content-container">
+            <div class="model-container">
+                <!-- GLB 모델을 보여줄 부분 -->
+                <model-viewer src="images/silksoulstar.glb" 
+                              alt="Silksoul Star 3D Model" 
+                              camera-controls 
+                              auto-rotate 
+                              disable-zoom>
+                </model-viewer>
+            </div>            
+            <h2>The Mystical World of Zeno</h2>
+            <p>
+                Silksoul's NFT project brings the mystical and unique stories of <strong>Zeno</strong>, beings from another star. 
+                Each Zeno represents a diverse personality, yet they all share an intriguing and enigmatic presence. 
+                Though expressionless and silent, Zeno’s emotions are vividly portrayed through their actions and designs.
+            </p>
+            <p>
+                Zeno is quirky, multidimensional, and holds secrets beyond imagination. As we step into a digital age, 
+                Zeno’s story becomes a collectible piece of the future—an investment into art, emotion, and innovation.
+            </p>
+            <p>
+                Owning a Zeno NFT means owning a part of this remarkable journey. The value of these creations is bound 
+                to grow as they gain recognition for their originality and story-driven essence. By holding a Zeno, 
+                you’re not just owning art; you’re investing in a future where your NFT could unlock greater opportunities, 
+                rewards, and status in the digital universe.
+            </p>
+        </div>
+    </section>
+    
+    <section id="collection">
+            <!-- NFT Collection -->
+            <div id="zeno-collection">
+                <div class="nft-card">
+                    <img src="images/nft1.png" alt="NFT 1">
+                    <div class="nft-info">
+                        <h3>Blue Zeno</h3>
+                        <p>Represents calm and wisdom.</p>
+                        <p class="price">Price: 2.5 ETH</p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <img src="images/nft2.png" alt="NFT 2">
+                    <div class="nft-info">
+                        <h3>Golden Zeno</h3>
+                        <p>Radiates power and ambition.</p>
+                        <p class="price">Price: 3.8 ETH</p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <img src="images/nft3.png" alt="NFT 3">
+                    <div class="nft-info">
+                        <h3>Shadow Zeno</h3>
+                        <p>Mystery and passion intertwined.</p>
+                        <p class="price">Price: 4.0 ETH</p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="nft-card">
+                    <img src="images/nft4.png" alt="NFT 4">
+                    <div class="nft-info">
+                        <h3>Crimson Zeno</h3>
+                        <p>Embodies energy and courage.</p>
+                        <p class="price">Price: 5.0 ETH</p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="jeno-updates">
+            <div class="jeno-header">
+                <h2>ZENO'S THOUGHT POUCH</h2>
+                <h3>UPDATES!</h3>
+            </div>            
+        
+            <div class="update-section">
+                <div class="update-box">
+                    <div class="text-container">
+                        <div class="timestamp">
+                            <span>POSTED 1 DAY AGO</span>
+                        </div>
+                        
+                        <h4>A SURPRISING MOMENT</h4>
+                        <p>Explore the ever-evolving thoughts of Jeno, where curiosity meets reflection. Stay tuned for regular updates!</p>
+                    </div>
+                    <img src="images/bluesoul.png" alt="Jeno's Thought Image">
+                </div>
+        
+                <div class="divider"></div>
+        
+                <div class="update-box">
+                    <div class="text-container">
+                        <div class="timestamp">
+                            <span>POSTED 1 DAY AGO</span>
+                        </div>                        
+                        <h4>A SURPRISING MOMENT</h4>
+                        <p>Explore the ever-evolving thoughts of Jeno, where curiosity meets reflection. Stay tuned for regular updates!</p>
+                    </div>
+                    <img src="images/bluesoul.png" alt="Jeno's Thought Image">
+                </div>
+        
+                <div class="more-button">
+                    <button>MORE +</button>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+        <section id="silksoul-future">
+
+            <div class="silksoul-features">
+                <!-- 첫 번째 기능 -->
+                <div class="feature-box">
+                    <img src="images/dao-icon.png" alt="DAO Icon">
+                    <h3>Global Community</h3>
+                    <p>Silksoul fosters a vibrant community through a DAO, enabling holders to actively participate in shaping its vision.</p>
+                    <p class="quote">"Holders are partners in Silksoul's growth."</p>
+                </div>
+                <!-- 두 번째 기능 -->
+                <div class="feature-box">
+                    <img src="images/metaverse-icon.png" alt="Metaverse Icon">
+                    <h3>Metaverse Integration</h3>
+                    <p>Silksoul NFTs create new value in virtual spaces, offering unique identities and immersive experiences.</p>
+                    <p class="quote">"Silksoul redefines your presence in the metaverse."</p>
+                </div>
+                <!-- 세 번째 기능 -->
+                <div class="feature-box">
+                    <img src="images/investment-icon.png" alt="Investment Icon">
+                    <h3>Future Investment</h3>
+                    <p>Exclusive physical items and digital scarcity make Silksoul a valuable asset for the future.</p>
+                    <p class="quote">"Beyond digital art, it’s an investment."</p>
+                </div>
+            </div>
+        </section>
+        >
+        
+        
+    
+    
+    <section id="contact">
+        <h2>Contact Silksoul</h2>
+        <p class="description">Have questions about our NFTs or want to collaborate? Reach out to the Silksoul team and join our global community.</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:support@silksoul.com">support@silksoul.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>Location: Polygon HQ, Metaverse City</p>
+            </div>
+            
+            <form class="contact-form">
+                <h3>Send Us a Message</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <footer id="silksoul-footer">
+        <div class="footer-content">
+            <h3>Silksoul</h3>
+            <p>Artistry, innovation, and a step into the future. Silksoul redefines NFTs for the modern era.</p>
+            <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Silksoul. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
