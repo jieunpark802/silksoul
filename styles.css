@@ -188,6 +188,57 @@ nav a:hover {
     }
 }
 
+
+.hamacoin-section {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hamacoin-section .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .hamacoin-section .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hamacoin-section .description {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hamacoin-section .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .hamacoin-logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .hamacoin-section .countdown h2 {
+            margin-bottom: 10px;
+        }
+
+        #countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .hamacoin-section .cta {
+            margin-top: 30px;
+        }
+
+        
+
+
 #nft-drop-section {
     display: flex;
     align-items: center;

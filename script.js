@@ -39,3 +39,30 @@ async function submitWallet() {
 }
 
 
+//하마토큰
+const targetDate = new Date("2025-02-10T00:00:00").getTime();
+const countdownTimer = document.getElementById('countdown-timer');
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownTimer.innerHTML = `
+        <div>${days}d</div>
+        <div>${hours}h</div>
+        <div>${minutes}m</div>
+        <div>${seconds}s</div>
+    `;
+
+    if (distance < 0) {
+        clearInterval(interval);
+        countdownTimer.innerHTML = "HamaCoin is Live!";
+    }
+}
+
+const interval = setInterval(updateCountdown, 1000);
